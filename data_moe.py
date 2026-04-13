@@ -70,7 +70,7 @@ def band_genre(text):
         return 'ws'
     if text.startswith('25点，Nightcord见。'):
         return '25'
-    if text.startswith('世界计划虚拟歌手'):
+    if text.startswith('世界计划虚拟歌手') or text.startswith('世界计划其他服务器'):
         return 'v'
     if text.startswith('世界计划其他歌曲'): # 待细分
         return 'other'
