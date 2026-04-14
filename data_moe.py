@@ -82,7 +82,8 @@ df.loc[df.id.isin(['76', '77', '141', '235', '336', '366', '489', '502', '579', 
                   list(map(str, range(685, 690)))), 'band'] = 'v'
 df.loc[df.id.isin(('302', '232', '233')), 'band'] = 'ln'
 df.loc[df.id.isin(('400',)), 'band'] = 'mmj'
-df.loc[df.id.isin(('230', '536', '555', '703')), 'band'] = 'vbs'
+df.loc[df.id.isin(('83', '84', '150', '177', '179', '311', # ビビバスアーカイブv
+    '230', '536', '555', '703')), 'band'] = 'vbs'
 df.loc[df.id.isin(('234', '623')), 'band'] = 'ws'
 df.loc[df.id.isin(('231', '501', '723')), 'band'] = '25'
 
