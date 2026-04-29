@@ -78,7 +78,8 @@ def band_genre(text):
 df['band'] = df.title.apply(band_genre)
 df['genre'] = df.title.str.extract(r'^(.*?)\d{0,1}#', expand=True)
 df.loc[df.id.isin(['76', '77', '141', '235', '336', '366', '489', '502', '579', '585', '624', '648',
-                   '726', '709'] + \
+                   '726', '709',
+                   '739'] + \
                   list(map(str, range(685, 690)))), 'band'] = 'v'
 df.loc[df.id.isin(('302', '232', '233')), 'band'] = 'ln'
 df.loc[df.id.isin(('400',)), 'band'] = 'mmj'
